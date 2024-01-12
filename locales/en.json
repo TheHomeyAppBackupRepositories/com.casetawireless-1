@@ -1,0 +1,15 @@
+{
+  "pair": {
+    "select_bridge": {
+      "title": "Select your Lutron Caseta bridge",
+      "no_bridges": "No Lutron Caseta bridges have been found"
+    },
+    "press_button": {
+      "title": "Press the button",
+      "description": "Press the button on the back of your Lutron Caseta bridge."
+    },
+    "failed": "Pairing failed, please try again"
+  },
+  "invalid-response": "Invalid response from bridge",
+  "bridge-not-available": "Bridge not (yet) available"
+}

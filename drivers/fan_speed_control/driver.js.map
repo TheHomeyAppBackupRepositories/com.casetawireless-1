@@ -1,0 +1,1 @@
+{"version":3,"file":"driver.js","sourceRoot":"","sources":["../../../drivers/fan_speed_control/driver.ts"],"names":[],"mappings":";;AAAA,gEAA2D;AAE3D,MAAM,CAAC,OAAO,GAAG,MAAM,2BAA4B,SAAQ,2BAAY;IAC3D,oBAAoB;QAC5B,OAAO,CAAC,0BAA0B,CAAC,CAAC;IACtC,CAAC;CACF,CAAC"}
