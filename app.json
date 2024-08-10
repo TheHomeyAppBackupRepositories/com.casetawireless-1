@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.casetawireless",
-  "version": "1.5.0",
+  "version": "1.6.1",
   "compatibility": ">=7.4.0",
   "platforms": [
     "local"
@@ -678,6 +678,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -769,6 +777,14 @@
               "type": "label",
               "label": {
                 "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
               },
               "value": "Unknown"
             }
@@ -865,6 +881,115 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "xlarge": "/drivers/motion_sensor/assets/images/xlarge.png",
+        "large": "/drivers/motion_sensor/assets/images/large.png",
+        "small": "/drivers/motion_sensor/assets/images/small.png"
+      },
+      "icon": "/drivers/motion_sensor/assets/icon.svg",
+      "pair": [
+        {
+          "id": "check_associated_bridge",
+          "template": "loading"
+        },
+        {
+          "id": "list_bridges",
+          "template": "list_devices",
+          "options": {
+            "singular": true,
+            "title": {
+              "en": "Select your bridge"
+            },
+            "subtitle": {
+              "en": "Select the bridge your device is connect with"
+            }
+          },
+          "navigation": {
+            "next": "check_authentication"
+          }
+        },
+        {
+          "id": "check_authentication",
+          "template": "loading"
+        },
+        {
+          "id": "authenticate"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "authenticate"
+        }
+      ],
+      "class": "sensor",
+      "name": {
+        "en": "Motion sensor"
+      },
+      "capabilities": [
+        "alarm_motion"
+      ],
+      "id": "motion_sensor",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Device information"
+          },
+          "children": [
+            {
+              "id": "model",
+              "type": "label",
+              "label": {
+                "en": "Model number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "serial",
+              "type": "label",
+              "label": {
+                "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -956,6 +1081,14 @@
               "type": "label",
               "label": {
                 "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
               },
               "value": "Unknown"
             }
@@ -1073,6 +1206,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -1186,6 +1327,14 @@
               "type": "label",
               "label": {
                 "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
               },
               "value": "Unknown"
             }
@@ -1303,6 +1452,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -1416,6 +1573,14 @@
               "type": "label",
               "label": {
                 "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
               },
               "value": "Unknown"
             }
@@ -1533,6 +1698,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -1648,6 +1821,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -1740,6 +1921,14 @@
               "type": "label",
               "label": {
                 "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
               },
               "value": "Unknown"
             }
@@ -1843,6 +2032,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -1942,6 +2139,14 @@
               "type": "label",
               "label": {
                 "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
               },
               "value": "Unknown"
             }
@@ -2045,6 +2250,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -2139,6 +2352,14 @@
                 "en": "Serial number"
               },
               "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
+              },
+              "value": "Unknown"
             }
           ]
         }
@@ -2230,6 +2451,14 @@
               "type": "label",
               "label": {
                 "en": "Serial number"
+              },
+              "value": "Unknown"
+            },
+            {
+              "id": "area",
+              "type": "label",
+              "label": {
+                "en": "Area"
               },
               "value": "Unknown"
             }
